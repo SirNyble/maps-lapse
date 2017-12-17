@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Counter from './Counter';
+import MainDisplay from './MainDisplay';
 
 document.addEventListener('DOMContentLoaded', function() {
   ReactDOM.render(
-    React.createElement(Counter),
+    <div>
+      <MainDisplay/>
+    </div>,
     document.getElementById('mount')
   );
 });
