@@ -1,12 +1,12 @@
 import React from 'react';
 import * as THREE from 'three';
 
+
 /**
  * A counter button: tap the button to increase the count.
  */
 class MainDisplay extends React.Component {
   constructor() {
-    console.log("CONSTRUCT");
     super();
     this.state = {
       count: 0,
@@ -28,7 +28,6 @@ class MainDisplay extends React.Component {
       requestAnimationFrame( this.animate );
 
       if(this.mesh) {
-
         this.mesh.rotation.x += 0.01;
         this.mesh.rotation.y += 0.02;
       }
